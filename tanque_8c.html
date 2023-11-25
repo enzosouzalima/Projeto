@@ -1,0 +1,662 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetoDoc: Referência do Arquivo C:/Users/ezoli/Downloads/Tanque/tanque.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetoDoc<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_2c12105386bcc5c3935feab96f296a41.html">Downloads</a></li><li class="navelem"><a class="el" href="dir_a70e297e98905e0dfb7103841a093ae4.html">Tanque</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo tanque.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;avr/io.h&gt;</code><br />
+<code>#include &lt;avr/interrupt.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a43bafb28b29491ec7f871319b5a3b2f8" id="r_a43bafb28b29491ec7f871319b5a3b2f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a>&#160;&#160;&#160;16000000UL</td></tr>
+<tr class="separator:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdeb5d7ebd85f69f253e3353bca9cbc9" id="r_afdeb5d7ebd85f69f253e3353bca9cbc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#afdeb5d7ebd85f69f253e3353bca9cbc9">PRESCALER_VALUE</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="separator:afdeb5d7ebd85f69f253e3353bca9cbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3acf3a16f5e22815253e1cd4f25dca" id="r_afa3acf3a16f5e22815253e1cd4f25dca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#afa3acf3a16f5e22815253e1cd4f25dca">TIMER1_COUNT</a>&#160;&#160;&#160;(<a class="el" href="tanque_8c.html#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a> / <a class="el" href="tanque_8c.html#afdeb5d7ebd85f69f253e3353bca9cbc9">PRESCALER_VALUE</a> - 1)</td></tr>
+<tr class="separator:afa3acf3a16f5e22815253e1cd4f25dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f5803169b049a5832800dc2383d010" id="r_a45f5803169b049a5832800dc2383d010"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a45f5803169b049a5832800dc2383d010">LASER_PIN</a>&#160;&#160;&#160;PB1</td></tr>
+<tr class="separator:a45f5803169b049a5832800dc2383d010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc4e22bceb7754ee2b7a1a0e03178b3" id="r_a8cc4e22bceb7754ee2b7a1a0e03178b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a8cc4e22bceb7754ee2b7a1a0e03178b3">SENSOR_LDR</a>&#160;&#160;&#160;PC0</td></tr>
+<tr class="separator:a8cc4e22bceb7754ee2b7a1a0e03178b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288dda84543d1bed235a0d213b46dc18" id="r_a288dda84543d1bed235a0d213b46dc18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a288dda84543d1bed235a0d213b46dc18">SINAL_A</a>&#160;&#160;&#160;PC2</td></tr>
+<tr class="separator:a288dda84543d1bed235a0d213b46dc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32041f4105925f44b5bdbf29c78d305" id="r_af32041f4105925f44b5bdbf29c78d305"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#af32041f4105925f44b5bdbf29c78d305">SINAL_B</a>&#160;&#160;&#160;PC1</td></tr>
+<tr class="separator:af32041f4105925f44b5bdbf29c78d305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0667b3b25bdf300fcf6bd7232d8182c2" id="r_a0667b3b25bdf300fcf6bd7232d8182c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a0667b3b25bdf300fcf6bd7232d8182c2">SINAL_C</a>&#160;&#160;&#160;PC4</td></tr>
+<tr class="separator:a0667b3b25bdf300fcf6bd7232d8182c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66df58638ac3758b80a2b675b341d2c1" id="r_a66df58638ac3758b80a2b675b341d2c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a66df58638ac3758b80a2b675b341d2c1">SINAL_D</a>&#160;&#160;&#160;PC3</td></tr>
+<tr class="separator:a66df58638ac3758b80a2b675b341d2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742977a3686ade862130b1c87214eb56" id="r_a742977a3686ade862130b1c87214eb56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a742977a3686ade862130b1c87214eb56">RESET_VIDAS</a>&#160;&#160;&#160;PC5</td></tr>
+<tr class="separator:a742977a3686ade862130b1c87214eb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f30ddd9cfc7ec2d4aee2f429d741141" id="r_a8f30ddd9cfc7ec2d4aee2f429d741141"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a8f30ddd9cfc7ec2d4aee2f429d741141">LED_VIDA1</a>&#160;&#160;&#160;PD0</td></tr>
+<tr class="separator:a8f30ddd9cfc7ec2d4aee2f429d741141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff24d891672fb27c38aafe6e406ad6da" id="r_aff24d891672fb27c38aafe6e406ad6da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#aff24d891672fb27c38aafe6e406ad6da">LED_VIDA2</a>&#160;&#160;&#160;PD1</td></tr>
+<tr class="separator:aff24d891672fb27c38aafe6e406ad6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e65f16758faa93e2a58d0a7f184336" id="r_a07e65f16758faa93e2a58d0a7f184336"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a07e65f16758faa93e2a58d0a7f184336">LED_VIDA3</a>&#160;&#160;&#160;PD2</td></tr>
+<tr class="separator:a07e65f16758faa93e2a58d0a7f184336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18043ad4b520dc7a20c9b54ee0e40086" id="r_a18043ad4b520dc7a20c9b54ee0e40086"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a18043ad4b520dc7a20c9b54ee0e40086">MOTOR1_FRENTE</a>&#160;&#160;&#160;PB3</td></tr>
+<tr class="separator:a18043ad4b520dc7a20c9b54ee0e40086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30eb25486dfb0a14c3eaf89d66f368f6" id="r_a30eb25486dfb0a14c3eaf89d66f368f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a30eb25486dfb0a14c3eaf89d66f368f6">MOTOR1_TRAS</a>&#160;&#160;&#160;PD3</td></tr>
+<tr class="separator:a30eb25486dfb0a14c3eaf89d66f368f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82952a63a295ee3ca91dd141fcf8bb12" id="r_a82952a63a295ee3ca91dd141fcf8bb12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a82952a63a295ee3ca91dd141fcf8bb12">MOTOR2_FRENTE</a>&#160;&#160;&#160;PD5</td></tr>
+<tr class="separator:a82952a63a295ee3ca91dd141fcf8bb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015be8dcd676c7773820d10a65a52083" id="r_a015be8dcd676c7773820d10a65a52083"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a015be8dcd676c7773820d10a65a52083">MOTOR2_TRAS</a>&#160;&#160;&#160;PD6</td></tr>
+<tr class="separator:a015be8dcd676c7773820d10a65a52083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:abb302081b7dbd40d0fea4bbe53fd9b7b" id="r_abb302081b7dbd40d0fea4bbe53fd9b7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#abb302081b7dbd40d0fea4bbe53fd9b7b">timer1_init</a> ()</td></tr>
+<tr class="separator:abb302081b7dbd40d0fea4bbe53fd9b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39420cdd896dd12c68e36313139d0a5" id="r_ad39420cdd896dd12c68e36313139d0a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#ad39420cdd896dd12c68e36313139d0a5">ISR</a> (TIMER1_COMPA_vect)</td></tr>
+<tr class="separator:ad39420cdd896dd12c68e36313139d0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99eb04bf8fed2beecfb3cb74451416c5" id="r_a99eb04bf8fed2beecfb3cb74451416c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a99eb04bf8fed2beecfb3cb74451416c5">timer0_init</a> ()</td></tr>
+<tr class="separator:a99eb04bf8fed2beecfb3cb74451416c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2d7cdddfb682dcc0391e60cf42c7d6" id="r_add2d7cdddfb682dcc0391e60cf42c7d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#add2d7cdddfb682dcc0391e60cf42c7d6">ISR</a> (TIMER0_OVF_vect)</td></tr>
+<tr class="separator:add2d7cdddfb682dcc0391e60cf42c7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd8cee0c5bd8d8b2f528216f7dd487d" id="r_a2cd8cee0c5bd8d8b2f528216f7dd487d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a2cd8cee0c5bd8d8b2f528216f7dd487d">timer2_init</a> ()</td></tr>
+<tr class="separator:a2cd8cee0c5bd8d8b2f528216f7dd487d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfcbe42bd266750aeb6e5d71e5ea479" id="r_a7cfcbe42bd266750aeb6e5d71e5ea479"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#a7cfcbe42bd266750aeb6e5d71e5ea479">ISR</a> (TIMER2_OVF_vect)</td></tr>
+<tr class="separator:a7cfcbe42bd266750aeb6e5d71e5ea479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tanque_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições e macros</h2>
+<a id="a43bafb28b29491ec7f871319b5a3b2f8" name="a43bafb28b29491ec7f871319b5a3b2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43bafb28b29491ec7f871319b5a3b2f8">&#9670;&#160;</a></span>F_CPU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F_CPU&#160;&#160;&#160;16000000UL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45f5803169b049a5832800dc2383d010" name="a45f5803169b049a5832800dc2383d010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f5803169b049a5832800dc2383d010">&#9670;&#160;</a></span>LASER_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LASER_PIN&#160;&#160;&#160;PB1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f30ddd9cfc7ec2d4aee2f429d741141" name="a8f30ddd9cfc7ec2d4aee2f429d741141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f30ddd9cfc7ec2d4aee2f429d741141">&#9670;&#160;</a></span>LED_VIDA1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_VIDA1&#160;&#160;&#160;PD0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff24d891672fb27c38aafe6e406ad6da" name="aff24d891672fb27c38aafe6e406ad6da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff24d891672fb27c38aafe6e406ad6da">&#9670;&#160;</a></span>LED_VIDA2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_VIDA2&#160;&#160;&#160;PD1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07e65f16758faa93e2a58d0a7f184336" name="a07e65f16758faa93e2a58d0a7f184336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07e65f16758faa93e2a58d0a7f184336">&#9670;&#160;</a></span>LED_VIDA3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_VIDA3&#160;&#160;&#160;PD2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18043ad4b520dc7a20c9b54ee0e40086" name="a18043ad4b520dc7a20c9b54ee0e40086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18043ad4b520dc7a20c9b54ee0e40086">&#9670;&#160;</a></span>MOTOR1_FRENTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR1_FRENTE&#160;&#160;&#160;PB3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30eb25486dfb0a14c3eaf89d66f368f6" name="a30eb25486dfb0a14c3eaf89d66f368f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30eb25486dfb0a14c3eaf89d66f368f6">&#9670;&#160;</a></span>MOTOR1_TRAS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR1_TRAS&#160;&#160;&#160;PD3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82952a63a295ee3ca91dd141fcf8bb12" name="a82952a63a295ee3ca91dd141fcf8bb12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82952a63a295ee3ca91dd141fcf8bb12">&#9670;&#160;</a></span>MOTOR2_FRENTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR2_FRENTE&#160;&#160;&#160;PD5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a015be8dcd676c7773820d10a65a52083" name="a015be8dcd676c7773820d10a65a52083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015be8dcd676c7773820d10a65a52083">&#9670;&#160;</a></span>MOTOR2_TRAS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR2_TRAS&#160;&#160;&#160;PD6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdeb5d7ebd85f69f253e3353bca9cbc9" name="afdeb5d7ebd85f69f253e3353bca9cbc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdeb5d7ebd85f69f253e3353bca9cbc9">&#9670;&#160;</a></span>PRESCALER_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PRESCALER_VALUE&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a742977a3686ade862130b1c87214eb56" name="a742977a3686ade862130b1c87214eb56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a742977a3686ade862130b1c87214eb56">&#9670;&#160;</a></span>RESET_VIDAS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESET_VIDAS&#160;&#160;&#160;PC5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cc4e22bceb7754ee2b7a1a0e03178b3" name="a8cc4e22bceb7754ee2b7a1a0e03178b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cc4e22bceb7754ee2b7a1a0e03178b3">&#9670;&#160;</a></span>SENSOR_LDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SENSOR_LDR&#160;&#160;&#160;PC0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a288dda84543d1bed235a0d213b46dc18" name="a288dda84543d1bed235a0d213b46dc18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288dda84543d1bed235a0d213b46dc18">&#9670;&#160;</a></span>SINAL_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SINAL_A&#160;&#160;&#160;PC2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af32041f4105925f44b5bdbf29c78d305" name="af32041f4105925f44b5bdbf29c78d305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af32041f4105925f44b5bdbf29c78d305">&#9670;&#160;</a></span>SINAL_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SINAL_B&#160;&#160;&#160;PC1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0667b3b25bdf300fcf6bd7232d8182c2" name="a0667b3b25bdf300fcf6bd7232d8182c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0667b3b25bdf300fcf6bd7232d8182c2">&#9670;&#160;</a></span>SINAL_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SINAL_C&#160;&#160;&#160;PC4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66df58638ac3758b80a2b675b341d2c1" name="a66df58638ac3758b80a2b675b341d2c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66df58638ac3758b80a2b675b341d2c1">&#9670;&#160;</a></span>SINAL_D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SINAL_D&#160;&#160;&#160;PC3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa3acf3a16f5e22815253e1cd4f25dca" name="afa3acf3a16f5e22815253e1cd4f25dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3acf3a16f5e22815253e1cd4f25dca">&#9670;&#160;</a></span>TIMER1_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIMER1_COUNT&#160;&#160;&#160;(<a class="el" href="tanque_8c.html#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a> / <a class="el" href="tanque_8c.html#afdeb5d7ebd85f69f253e3353bca9cbc9">PRESCALER_VALUE</a> - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a id="add2d7cdddfb682dcc0391e60cf42c7d6" name="add2d7cdddfb682dcc0391e60cf42c7d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add2d7cdddfb682dcc0391e60cf42c7d6">&#9670;&#160;</a></span>ISR() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">TIMER0_OVF_vect&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   51</span>                     {</div>
+<div class="line"><span class="lineno">   52</span>    <span class="comment">// Ler os sinais de entrada nas portas PC1, PC2, PC3, PC4</span></div>
+<div class="line"><span class="lineno">   53</span>    uint8_t frente = PINC &amp; (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a288dda84543d1bed235a0d213b46dc18">SINAL_A</a>);</div>
+<div class="line"><span class="lineno">   54</span>    uint8_t direita = PINC &amp; (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#af32041f4105925f44b5bdbf29c78d305">SINAL_B</a>);</div>
+<div class="line"><span class="lineno">   55</span>    uint8_t esquerda = PINC &amp; (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a0667b3b25bdf300fcf6bd7232d8182c2">SINAL_C</a>);</div>
+<div class="line"><span class="lineno">   56</span>    uint8_t atras = PINC &amp; (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a66df58638ac3758b80a2b675b341d2c1">SINAL_D</a>);</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> (frente == (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a288dda84543d1bed235a0d213b46dc18">SINAL_A</a>)) {</div>
+<div class="line"><span class="lineno">   59</span>        <span class="comment">// Ligar MOTOR1_FRENTE e MOTOR2_FRENTE 65%</span></div>
+<div class="line"><span class="lineno">   60</span>        <span class="comment">// Desliga MOTOR1_TRAS e MOTOR2_TRAS</span></div>
+<div class="line"><span class="lineno">   61</span>        OCR2B = 0;  <span class="comment">// Ajuste para 80% do ciclo de trabalho</span></div>
+<div class="line"><span class="lineno">   62</span>        OCR0B = 205;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   63</span>        OCR0A = 0;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   64</span>        OCR2A = 205;  <span class="comment">// Ajuste para 80% do ciclo de trabalho</span></div>
+<div class="line"><span class="lineno">   65</span>        <span class="comment">//PORTD &amp;= ~((1 &lt;&lt; MOTOR1_TRAS) | (1 &lt;&lt; MOTOR2_TRAS));</span></div>
+<div class="line"><span class="lineno">   66</span>    } </div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (esquerda == (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a0667b3b25bdf300fcf6bd7232d8182c2">SINAL_C</a>)) {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="comment">// Ligar MOTOR1_frente 80% e MOTOR2_frente 60%</span></div>
+<div class="line"><span class="lineno">   69</span>        <span class="comment">// Desliga MOTOR1_TRAS e MOTOR2_TRAS</span></div>
+<div class="line"><span class="lineno">   70</span>        OCR2B = 0;  <span class="comment">// Ajuste para 80% do ciclo de trabalho</span></div>
+<div class="line"><span class="lineno">   71</span>        OCR0B = 0;   <span class="comment">// Ajuste para 60% do ciclo de trabalho</span></div>
+<div class="line"><span class="lineno">   72</span>        OCR0A = 205;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   73</span>        OCR2A = 144;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   74</span>        <span class="comment">//PORTD &amp;= ~((1 &lt;&lt; MOTOR1_TRAS) | (1 &lt;&lt; MOTOR2_TRAS));</span></div>
+<div class="line"><span class="lineno">   75</span>    } </div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (direita == (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#af32041f4105925f44b5bdbf29c78d305">SINAL_B</a>)) {</div>
+<div class="line"><span class="lineno">   77</span>        <span class="comment">// Ligar MOTOR1_frente 60% e MOTOR2_frente 80%</span></div>
+<div class="line"><span class="lineno">   78</span>        <span class="comment">// Desliga MOTOR1_TRAS e MOTOR2_TRAS</span></div>
+<div class="line"><span class="lineno">   79</span>        OCR2B = 144;   <span class="comment">// Ajuste para 60% do ciclo de trabalho</span></div>
+<div class="line"><span class="lineno">   80</span>        OCR0B = 205;  <span class="comment">// Ajuste para 80% do ciclo de trabalho</span></div>
+<div class="line"><span class="lineno">   81</span>        OCR0A = 0;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   82</span>        OCR2A = 0;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   83</span>        <span class="comment">//PORTD &amp;= ~((1 &lt;&lt; MOTOR1_TRAS) | (1 &lt;&lt; MOTOR2_TRAS));</span></div>
+<div class="line"><span class="lineno">   84</span>    } </div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (atras == (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a66df58638ac3758b80a2b675b341d2c1">SINAL_D</a>)) {</div>
+<div class="line"><span class="lineno">   86</span>        <span class="comment">// Ligar MOTOR1_TRAS e MOTOR2_TRAS 80%</span></div>
+<div class="line"><span class="lineno">   87</span>        <span class="comment">// Desliga MOTOR1_FRENTE e MOTOR2_FRENTE</span></div>
+<div class="line"><span class="lineno">   88</span>        OCR0A = 205;  <span class="comment">// Ajuste para 80% do ciclo de trabalho</span></div>
+<div class="line"><span class="lineno">   89</span>        OCR2A = 0;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   90</span>        OCR0B = 0;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   91</span>        OCR2B = 205;  <span class="comment">// Ajuste para 80% do ciclo de trabalho</span></div>
+<div class="line"><span class="lineno">   92</span>        <span class="comment">//PORTD &amp;= ~((1 &lt;&lt; MOTOR1_FRENTE) | (1 &lt;&lt; MOTOR2_FRENTE));</span></div>
+<div class="line"><span class="lineno">   93</span>    } </div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   95</span>        OCR0A = 0;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   96</span>        OCR2A = 0;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   97</span>        OCR0B = 0;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   98</span>        OCR2B = 0;  <span class="comment">// Desliga motor</span></div>
+<div class="line"><span class="lineno">   99</span>        <span class="comment">// Desliga MOTOR1_FRENTE, MOTOR2_FRENTE, MOTOR1_TRAS e MOTOR2_TRAS</span></div>
+<div class="line"><span class="lineno">  100</span>        <span class="comment">//PORTD &amp;= ~((1 &lt;&lt; MOTOR1_FRENTE) | (1 &lt;&lt; MOTOR2_FRENTE) | (1 &lt;&lt; MOTOR1_TRAS) | (1 &lt;&lt; MOTOR2_TRAS));</span></div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span>}</div>
+<div class="ttc" id="atanque_8c_html_a0667b3b25bdf300fcf6bd7232d8182c2"><div class="ttname"><a href="tanque_8c.html#a0667b3b25bdf300fcf6bd7232d8182c2">SINAL_C</a></div><div class="ttdeci">#define SINAL_C</div><div class="ttdef"><b>Definição</b> tanque.c:12</div></div>
+<div class="ttc" id="atanque_8c_html_a288dda84543d1bed235a0d213b46dc18"><div class="ttname"><a href="tanque_8c.html#a288dda84543d1bed235a0d213b46dc18">SINAL_A</a></div><div class="ttdeci">#define SINAL_A</div><div class="ttdef"><b>Definição</b> tanque.c:10</div></div>
+<div class="ttc" id="atanque_8c_html_a66df58638ac3758b80a2b675b341d2c1"><div class="ttname"><a href="tanque_8c.html#a66df58638ac3758b80a2b675b341d2c1">SINAL_D</a></div><div class="ttdeci">#define SINAL_D</div><div class="ttdef"><b>Definição</b> tanque.c:13</div></div>
+<div class="ttc" id="atanque_8c_html_af32041f4105925f44b5bdbf29c78d305"><div class="ttname"><a href="tanque_8c.html#af32041f4105925f44b5bdbf29c78d305">SINAL_B</a></div><div class="ttdeci">#define SINAL_B</div><div class="ttdef"><b>Definição</b> tanque.c:11</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad39420cdd896dd12c68e36313139d0a5" name="ad39420cdd896dd12c68e36313139d0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad39420cdd896dd12c68e36313139d0a5">&#9670;&#160;</a></span>ISR() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">TIMER1_COMPA_vect&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   32</span>                       {</div>
+<div class="line"><span class="lineno">   33</span>    PORTB ^= (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a45f5803169b049a5832800dc2383d010">LASER_PIN</a>); <span class="comment">// Alterna o estado do Laser(PB1)</span></div>
+<div class="line"><span class="lineno">   34</span>}</div>
+<div class="ttc" id="atanque_8c_html_a45f5803169b049a5832800dc2383d010"><div class="ttname"><a href="tanque_8c.html#a45f5803169b049a5832800dc2383d010">LASER_PIN</a></div><div class="ttdeci">#define LASER_PIN</div><div class="ttdef"><b>Definição</b> tanque.c:8</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7cfcbe42bd266750aeb6e5d71e5ea479" name="a7cfcbe42bd266750aeb6e5d71e5ea479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cfcbe42bd266750aeb6e5d71e5ea479">&#9670;&#160;</a></span>ISR() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">TIMER2_OVF_vect&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  111</span>                     {</div>
+<div class="line"><span class="lineno">  112</span>    </div>
+<div class="line"><span class="lineno">  113</span>    <span class="comment">// Selecionar o canal ADC (por exemplo, ADC0 para o pino PC0)</span></div>
+<div class="line"><span class="lineno">  114</span>    ADMUX &amp;= 0xF0;          <span class="comment">// Limpar os bits de seleção de canal</span></div>
+<div class="line"><span class="lineno">  115</span>    ADMUX |= <a class="code hl_define" href="tanque_8c.html#a8cc4e22bceb7754ee2b7a1a0e03178b3">SENSOR_LDR</a>; <span class="comment">// Configurar o canal ADC (por exemplo, para o pino PC0)</span></div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>    <span class="comment">// Iniciar a conversão</span></div>
+<div class="line"><span class="lineno">  118</span>    ADCSRA |= (1 &lt;&lt; ADSC);</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>    <span class="comment">// Aguardar o término da conversão</span></div>
+<div class="line"><span class="lineno">  121</span>    <span class="keywordflow">while</span> (ADCSRA &amp; (1 &lt;&lt; ADSC));</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    uint16_t ldr_value = ADC;</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">if</span> ((PIND &amp; (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a8f30ddd9cfc7ec2d4aee2f429d741141">LED_VIDA1</a>)) &amp;&amp; (PIND &amp; (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#aff24d891672fb27c38aafe6e406ad6da">LED_VIDA2</a>)) &amp;&amp; (PIND &amp; (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a07e65f16758faa93e2a58d0a7f184336">LED_VIDA3</a>)) &amp;&amp; (ldr_value &lt; 450)) {</div>
+<div class="line"><span class="lineno">  126</span>            </div>
+<div class="line"><span class="lineno">  127</span>            PORTD &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a07e65f16758faa93e2a58d0a7f184336">LED_VIDA3</a>);<span class="comment">// Desliga o LED_VIDA3</span></div>
+<div class="line"><span class="lineno">  128</span>            _delay_ms(5000);</div>
+<div class="line"><span class="lineno">  129</span>    }</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((PIND &amp; (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a8f30ddd9cfc7ec2d4aee2f429d741141">LED_VIDA1</a>)) &amp;&amp; (PIND &amp; (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#aff24d891672fb27c38aafe6e406ad6da">LED_VIDA2</a>)) &amp;&amp; (ldr_value &lt; 450)) {</div>
+<div class="line"><span class="lineno">  131</span>            </div>
+<div class="line"><span class="lineno">  132</span>            PORTD &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#aff24d891672fb27c38aafe6e406ad6da">LED_VIDA2</a>);<span class="comment">// Desliga o LED_VIDA2</span></div>
+<div class="line"><span class="lineno">  133</span>            _delay_ms(5000);</div>
+<div class="line"><span class="lineno">  134</span>    }</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((PIND &amp; (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a8f30ddd9cfc7ec2d4aee2f429d741141">LED_VIDA1</a>)) &amp;&amp; (ldr_value &lt; 450)) {</div>
+<div class="line"><span class="lineno">  136</span>            </div>
+<div class="line"><span class="lineno">  137</span>            PORTD &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a8f30ddd9cfc7ec2d4aee2f429d741141">LED_VIDA1</a>);<span class="comment">// Desliga o LED_VIDA1</span></div>
+<div class="line"><span class="lineno">  138</span>            _delay_ms(5000);</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+<div class="line"><span class="lineno">  140</span>}</div>
+<div class="ttc" id="atanque_8c_html_a07e65f16758faa93e2a58d0a7f184336"><div class="ttname"><a href="tanque_8c.html#a07e65f16758faa93e2a58d0a7f184336">LED_VIDA3</a></div><div class="ttdeci">#define LED_VIDA3</div><div class="ttdef"><b>Definição</b> tanque.c:17</div></div>
+<div class="ttc" id="atanque_8c_html_a8cc4e22bceb7754ee2b7a1a0e03178b3"><div class="ttname"><a href="tanque_8c.html#a8cc4e22bceb7754ee2b7a1a0e03178b3">SENSOR_LDR</a></div><div class="ttdeci">#define SENSOR_LDR</div><div class="ttdef"><b>Definição</b> tanque.c:9</div></div>
+<div class="ttc" id="atanque_8c_html_a8f30ddd9cfc7ec2d4aee2f429d741141"><div class="ttname"><a href="tanque_8c.html#a8f30ddd9cfc7ec2d4aee2f429d741141">LED_VIDA1</a></div><div class="ttdeci">#define LED_VIDA1</div><div class="ttdef"><b>Definição</b> tanque.c:15</div></div>
+<div class="ttc" id="atanque_8c_html_aff24d891672fb27c38aafe6e406ad6da"><div class="ttname"><a href="tanque_8c.html#aff24d891672fb27c38aafe6e406ad6da">LED_VIDA2</a></div><div class="ttdeci">#define LED_VIDA2</div><div class="ttdef"><b>Definição</b> tanque.c:16</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  141</span>           {</div>
+<div class="line"><span class="lineno">  142</span>  </div>
+<div class="line"><span class="lineno">  143</span>    ADCSRA |= (1 &lt;&lt; ADEN); <span class="comment">// Habilita o ADC</span></div>
+<div class="line"><span class="lineno">  144</span>    </div>
+<div class="line"><span class="lineno">  145</span>    <a class="code hl_function" href="tanque_8c.html#abb302081b7dbd40d0fea4bbe53fd9b7b">timer1_init</a>(); <span class="comment">// Inicializa o timer1</span></div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_function" href="tanque_8c.html#a99eb04bf8fed2beecfb3cb74451416c5">timer0_init</a>(); <span class="comment">// Inicializa o timer0</span></div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_function" href="tanque_8c.html#a2cd8cee0c5bd8d8b2f528216f7dd487d">timer2_init</a>(); <span class="comment">// Inicializa o timer2</span></div>
+<div class="line"><span class="lineno">  148</span>    </div>
+<div class="line"><span class="lineno">  149</span>    DDRB |= (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a45f5803169b049a5832800dc2383d010">LASER_PIN</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a18043ad4b520dc7a20c9b54ee0e40086">MOTOR1_FRENTE</a>); <span class="comment">// Configura como pinos de saída</span></div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>    DDRD |= (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a8f30ddd9cfc7ec2d4aee2f429d741141">LED_VIDA1</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#aff24d891672fb27c38aafe6e406ad6da">LED_VIDA2</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a07e65f16758faa93e2a58d0a7f184336">LED_VIDA3</a>) |</div>
+<div class="line"><span class="lineno">  152</span>            (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a30eb25486dfb0a14c3eaf89d66f368f6">MOTOR1_TRAS</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a82952a63a295ee3ca91dd141fcf8bb12">MOTOR2_FRENTE</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a015be8dcd676c7773820d10a65a52083">MOTOR2_TRAS</a>); <span class="comment">// Configura como pinos de saída</span></div>
+<div class="line"><span class="lineno">  153</span> </div>
+<div class="line"><span class="lineno">  154</span>    DDRC &amp;= ~((1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a8cc4e22bceb7754ee2b7a1a0e03178b3">SENSOR_LDR</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a288dda84543d1bed235a0d213b46dc18">SINAL_A</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#af32041f4105925f44b5bdbf29c78d305">SINAL_B</a>) |</div>
+<div class="line"><span class="lineno">  155</span>              (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a0667b3b25bdf300fcf6bd7232d8182c2">SINAL_C</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a66df58638ac3758b80a2b675b341d2c1">SINAL_D</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a742977a3686ade862130b1c87214eb56">RESET_VIDAS</a>)); <span class="comment">// Configura como pinos de entrada</span></div>
+<div class="line"><span class="lineno">  156</span>              </div>
+<div class="line"><span class="lineno">  157</span>    PORTD |= (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a8f30ddd9cfc7ec2d4aee2f429d741141">LED_VIDA1</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#aff24d891672fb27c38aafe6e406ad6da">LED_VIDA2</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a07e65f16758faa93e2a58d0a7f184336">LED_VIDA3</a>); <span class="comment">// Acende os LEDs quando o sistema e&#39; ligado</span></div>
+<div class="line"><span class="lineno">  158</span>    </div>
+<div class="line"><span class="lineno">  159</span>    <span class="comment">// Main Loop</span></div>
+<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">while</span> (1) {</div>
+<div class="line"><span class="lineno">  161</span>        <span class="comment">// Verifica se o botão na porta PC5 está pressionado</span></div>
+<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">if</span> (!(PINC &amp; (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a742977a3686ade862130b1c87214eb56">RESET_VIDAS</a>))) {</div>
+<div class="line"><span class="lineno">  163</span>            PORTD |= (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a8f30ddd9cfc7ec2d4aee2f429d741141">LED_VIDA1</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#aff24d891672fb27c38aafe6e406ad6da">LED_VIDA2</a>) | (1 &lt;&lt; <a class="code hl_define" href="tanque_8c.html#a07e65f16758faa93e2a58d0a7f184336">LED_VIDA3</a>); <span class="comment">// Acende os LEDs assim resetando as vidas</span></div>
+<div class="line"><span class="lineno">  164</span>        }</div>
+<div class="line"><span class="lineno">  165</span>    }</div>
+<div class="line"><span class="lineno">  166</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  167</span>}</div>
+<div class="ttc" id="atanque_8c_html_a015be8dcd676c7773820d10a65a52083"><div class="ttname"><a href="tanque_8c.html#a015be8dcd676c7773820d10a65a52083">MOTOR2_TRAS</a></div><div class="ttdeci">#define MOTOR2_TRAS</div><div class="ttdef"><b>Definição</b> tanque.c:21</div></div>
+<div class="ttc" id="atanque_8c_html_a18043ad4b520dc7a20c9b54ee0e40086"><div class="ttname"><a href="tanque_8c.html#a18043ad4b520dc7a20c9b54ee0e40086">MOTOR1_FRENTE</a></div><div class="ttdeci">#define MOTOR1_FRENTE</div><div class="ttdef"><b>Definição</b> tanque.c:18</div></div>
+<div class="ttc" id="atanque_8c_html_a2cd8cee0c5bd8d8b2f528216f7dd487d"><div class="ttname"><a href="tanque_8c.html#a2cd8cee0c5bd8d8b2f528216f7dd487d">timer2_init</a></div><div class="ttdeci">void timer2_init()</div><div class="ttdef"><b>Definição</b> tanque.c:104</div></div>
+<div class="ttc" id="atanque_8c_html_a30eb25486dfb0a14c3eaf89d66f368f6"><div class="ttname"><a href="tanque_8c.html#a30eb25486dfb0a14c3eaf89d66f368f6">MOTOR1_TRAS</a></div><div class="ttdeci">#define MOTOR1_TRAS</div><div class="ttdef"><b>Definição</b> tanque.c:19</div></div>
+<div class="ttc" id="atanque_8c_html_a742977a3686ade862130b1c87214eb56"><div class="ttname"><a href="tanque_8c.html#a742977a3686ade862130b1c87214eb56">RESET_VIDAS</a></div><div class="ttdeci">#define RESET_VIDAS</div><div class="ttdef"><b>Definição</b> tanque.c:14</div></div>
+<div class="ttc" id="atanque_8c_html_a82952a63a295ee3ca91dd141fcf8bb12"><div class="ttname"><a href="tanque_8c.html#a82952a63a295ee3ca91dd141fcf8bb12">MOTOR2_FRENTE</a></div><div class="ttdeci">#define MOTOR2_FRENTE</div><div class="ttdef"><b>Definição</b> tanque.c:20</div></div>
+<div class="ttc" id="atanque_8c_html_a99eb04bf8fed2beecfb3cb74451416c5"><div class="ttname"><a href="tanque_8c.html#a99eb04bf8fed2beecfb3cb74451416c5">timer0_init</a></div><div class="ttdeci">void timer0_init()</div><div class="ttdef"><b>Definição</b> tanque.c:37</div></div>
+<div class="ttc" id="atanque_8c_html_abb302081b7dbd40d0fea4bbe53fd9b7b"><div class="ttname"><a href="tanque_8c.html#abb302081b7dbd40d0fea4bbe53fd9b7b">timer1_init</a></div><div class="ttdeci">void timer1_init()</div><div class="ttdef"><b>Definição</b> tanque.c:24</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a99eb04bf8fed2beecfb3cb74451416c5" name="a99eb04bf8fed2beecfb3cb74451416c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99eb04bf8fed2beecfb3cb74451416c5">&#9670;&#160;</a></span>timer0_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void timer0_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                   {</div>
+<div class="line"><span class="lineno">   38</span>    <span class="comment">// Modo PWM não invertido para OC0A e OC0B, prescaler para 64</span></div>
+<div class="line"><span class="lineno">   39</span>    TCCR0A |= (1 &lt;&lt; WGM00) | (1 &lt;&lt; WGM01) | (1 &lt;&lt; COM0A1) | (1 &lt;&lt; COM0B1);</div>
+<div class="line"><span class="lineno">   40</span>    TCCR0B |= (1 &lt;&lt; CS01) | (1 &lt;&lt; CS00);</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    <span class="comment">// Modo PWM não invertido para OC2A e OC2B, prescaler para 64</span></div>
+<div class="line"><span class="lineno">   43</span>    TCCR2A |= (1 &lt;&lt; WGM20) | (1 &lt;&lt; WGM21) | (1 &lt;&lt; COM2A1) | (1 &lt;&lt; COM2B1);</div>
+<div class="line"><span class="lineno">   44</span>    TCCR2B |= (1 &lt;&lt; CS22) | (1 &lt;&lt; CS20);</div>
+<div class="line"><span class="lineno">   45</span>    </div>
+<div class="line"><span class="lineno">   46</span>    TIMSK0 |= (1 &lt;&lt; TOIE0); <span class="comment">// Habilitar a interrupção de overflow</span></div>
+<div class="line"><span class="lineno">   47</span>    sei(); <span class="comment">// Habilita as interrupções globais</span></div>
+<div class="line"><span class="lineno">   48</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abb302081b7dbd40d0fea4bbe53fd9b7b" name="abb302081b7dbd40d0fea4bbe53fd9b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb302081b7dbd40d0fea4bbe53fd9b7b">&#9670;&#160;</a></span>timer1_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void timer1_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                   {</div>
+<div class="line"><span class="lineno">   25</span>    TCCR1B |= (1 &lt;&lt; CS12) | (1 &lt;&lt; CS10); <span class="comment">// Prescaler para 1024</span></div>
+<div class="line"><span class="lineno">   26</span>    OCR1A = <a class="code hl_define" href="tanque_8c.html#afa3acf3a16f5e22815253e1cd4f25dca">TIMER1_COUNT</a>;</div>
+<div class="line"><span class="lineno">   27</span>    TIMSK1 |= (1 &lt;&lt; OCIE1A); <span class="comment">// Habilitar a interrupção de comparação A</span></div>
+<div class="line"><span class="lineno">   28</span>    sei(); <span class="comment">// Habilita as interrupções globais</span></div>
+<div class="line"><span class="lineno">   29</span>}</div>
+<div class="ttc" id="atanque_8c_html_afa3acf3a16f5e22815253e1cd4f25dca"><div class="ttname"><a href="tanque_8c.html#afa3acf3a16f5e22815253e1cd4f25dca">TIMER1_COUNT</a></div><div class="ttdeci">#define TIMER1_COUNT</div><div class="ttdef"><b>Definição</b> tanque.c:6</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2cd8cee0c5bd8d8b2f528216f7dd487d" name="a2cd8cee0c5bd8d8b2f528216f7dd487d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd8cee0c5bd8d8b2f528216f7dd487d">&#9670;&#160;</a></span>timer2_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void timer2_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  104</span>                   {</div>
+<div class="line"><span class="lineno">  105</span>    </div>
+<div class="line"><span class="lineno">  106</span>    TCCR2B |= (1 &lt;&lt; CS22);<span class="comment">// Configurar o prescaler para 64 </span></div>
+<div class="line"><span class="lineno">  107</span>    TIMSK2 |= (1 &lt;&lt; TOIE2);<span class="comment">// Habilitar a interrupção de overflow</span></div>
+<div class="line"><span class="lineno">  108</span>    TCNT2 = 0;<span class="comment">// Inicializar o Timer2</span></div>
+<div class="line"><span class="lineno">  109</span>    </div>
+<div class="line"><span class="lineno">  110</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
