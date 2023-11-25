@@ -1,5 +1,11 @@
 # Tanque
-#Participantes
+
+# Participantes
+Enzo de Souza Lima
+Victor Faria Medeiros 
+Guilherme Abe Missawa
+Luis Guilherme Pinho
+
 # Sobre
 O Tanque, como é chamado, possui 3 vidas por LEDS em sua parte superior. Sua locomoção é feita por duas rodas que são controladas através de um controle remoto RF 4 canais com receptor de 315 mHZ.
 
